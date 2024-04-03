@@ -1,0 +1,91 @@
+/*:root selector is globally scoped, convenient as container for variables*/
+:root {
+    --back-color: #111215;
+    --box-color: #1a1b20;
+    --text-color: #ffffff;
+    --primary-color: #ff3366;
+    --secondary-color: #0033ff;
+}
+
+/*Contains body style*/
+body {
+    background-color: var(--back-color);
+    color: var(--text-color);
+    padding: 0%;
+    margin: 0%;
+}
+
+/*Contains header style*/
+header, footer{
+    width: auto;
+    height: 60px;
+    font-size: 20px;
+    background-color: var(--box-color);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.social {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+/*Contains style for hyperlinks contained in navigation tags*/
+nav a {
+    text-decoration: none;
+    line-height: 60px;
+    color: var(--text-color);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*Contains style for when user hovers over element in navigator */
+nav :hover {
+    color: var(--secondary-color);
+}
+
+/*Contains style for when hyperlink tag in navigator has the "active" class*/
+nav a.active {
+    color: var(--primary-color);
+}
+
+/*Contains style for article tags*/
+article {
+    text-align: center;
+    margin: 80px;
+    padding: 80px;
+    background-color: var(--box-color);
+    border-radius: 10px;
+    box-shadow: 0 0 30px var(--box-color);
+}
+
+/*Contains style for buttons.*/
+button {
+    font-size: 20px;
+    color: var(--text-color);
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
+    border: 0px;
+    padding: 10px;
+}
+
+/*Contains style for when user hovers mouse over button*/
+button:hover {
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
+    cursor: pointer;
+}
