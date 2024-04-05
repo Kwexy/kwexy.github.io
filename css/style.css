@@ -2,6 +2,7 @@
 :root {
     --back-color: #111215;
     --box-color: #1a1b20;
+    --nav-button-color: #202024;
     --text-color: #ffffff;
     --primary-color: #ff3366;
     --secondary-color: #0033ff;
@@ -9,24 +10,48 @@
 
 /*Contains body style*/
 body {
-    background-color: var(--back-color);
+    background: linear-gradient(var(--back-color), #030507);
     color: var(--text-color);
-    padding: 0%;
-    margin: 0%;
+    padding: 0px;
+    margin: 0px;
+
 }
 
-/*Contains header style*/
-header, footer{
+/*Contains footer style*/
+footer {
     width: auto;
     height: 60px;
     font-size: 20px;
-    background-color: var(--box-color);
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: 20px;
     overflow: hidden;
     text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#divider-line {
+    width: 80%;
+    height: 1px;
+    margin: auto;
+    background: var(--primary-color);
 }
 
 .logo {
@@ -37,13 +62,24 @@ header, footer{
     padding-left: 10px;
 }
 
-.social {
-    float: right;
-    width: 40px;
-    height: 40px;
-    margin-top: 5px;
-    padding-top: 5px;
-    padding-right: 20px;
+nav img {
+    height: 50px;
+    float: left;
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    width: auto;
+    height: 60px;
+    font-size: 20px;
+    background-color: var(--box-color);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
 }
 
 /*Contains style for hyperlinks contained in navigation tags*/
@@ -51,18 +87,34 @@ nav a {
     text-decoration: none;
     line-height: 60px;
     color: var(--text-color);
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 5px;
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+nav ul li .social {
+    float: right;
+    background-color: var(--box-color);
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*Contains style for when user hovers over element in navigator */
-nav :hover {
+nav a:hover {
     color: var(--secondary-color);
+    background-color: var(--nav-button-color);
 }
 
-/*Contains style for when hyperlink tag in navigator has the "active" class*/
-nav a.active {
+/*Contains style for when hyperlink tag in navigator has the "active" id*/
+nav a#active {
     color: var(--primary-color);
+    background-color: var(--back-color);
 }
 
 /*Contains style for article tags*/
@@ -75,6 +127,20 @@ article {
     box-shadow: 0 0 30px var(--box-color);
 }
 
+article ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+}
+
+article ul b {
+    color: var(--primary-color);
+}
+
+article .showcase {
+    width: 40%;
+}
+
 /*Contains style for buttons.*/
 button {
     font-size: 20px;
@@ -82,6 +148,7 @@ button {
     background: linear-gradient(var(--primary-color), var(--secondary-color));
     border: 0px;
     padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Contains style for when user hovers mouse over button*/
