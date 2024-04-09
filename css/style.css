@@ -6,6 +6,8 @@
     --text-color: #ffffff;
     --primary-color: #ff3366;
     --secondary-color: #0033ff;
+    --primary-font: "Open Sans", sans-serif;
+    --header-size: 40px;
 }
 
 /*Contains body style*/
@@ -14,37 +16,68 @@ body {
     color: var(--text-color);
     padding: 0px;
     margin: 0px;
+    /*flex-direction: column;*/
+    min-height: 100vh;
+}
 
+section {
+    /*flex: 1;*/
+    min-height: 100vh;
 }
 
 /*Contains footer style*/
 footer {
     width: auto;
-    height: 60px;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--primary-font);
     text-decoration: none;
-    margin: auto;
-    padding: 20px;
     overflow: hidden;
     text-align: center;
+    background-color: var(--nav-button-color);
 }
 
 h1 {
     font-size: 50px;
     margin: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--primary-font);
 }
 
 h2 {
     font-size: 20px;
     margin: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--primary-font);
 }
 
 p {
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--primary-font);
+}
+
+/*Contains style for article tags*/
+article {
+    text-align: center;
+    margin: 80px;
+    padding: 80px;
+    background-color: var(--box-color);
+    border-radius: 10px;
+    box-shadow: 0 0 30px var(--box-color);
+}
+
+article .showcase {
+    width: 40%;
+}
+
+table, th, td {
+    background-color: var(--nav-button-color);
+    border-color: var(--back-color);
+    border-style: solid;
+    border-width: 1px;
+    text-align: left;
+    margin: auto;
+}
+
+th {
+    width: 25%;
 }
 
 #divider-line {
@@ -74,7 +107,7 @@ nav ul {
     height: 60px;
     font-size: 20px;
     background-color: var(--box-color);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--primary-font);
     text-decoration: none;
     margin: auto;
     padding: 0;
@@ -117,30 +150,6 @@ nav a#active {
     background-color: var(--back-color);
 }
 
-/*Contains style for article tags*/
-article {
-    text-align: center;
-    margin: 80px;
-    padding: 80px;
-    background-color: var(--box-color);
-    border-radius: 10px;
-    box-shadow: 0 0 30px var(--box-color);
-}
-
-article ul {
-    display: table;
-    margin: 0 auto;
-    text-align: left;
-}
-
-article ul b {
-    color: var(--primary-color);
-}
-
-article .showcase {
-    width: 40%;
-}
-
 /*Contains style for buttons.*/
 button {
     font-size: 20px;
@@ -148,7 +157,7 @@ button {
     background: linear-gradient(var(--primary-color), var(--secondary-color));
     border: 0px;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--primary-font);
 }
 
 /*Contains style for when user hovers mouse over button*/

@@ -4,6 +4,10 @@
         <title>Kyran Gibson - Portfolio</title>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" type="image/x-icon" href="./img/website-logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/140d036a60.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -12,11 +16,11 @@
                     <li><img src="./img/website-logo.png"></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                    <li><a class="social" href="https://www.instagram.com/kwextech"><img class="social" src="./img/insta-logo.png"></a></li>
-                    <li><a class="social" href="https://www.youtube.com/channel/UCqNKAwAQuSZq9qMwQVak7xg"><img class="social" src="./img/youtube-logo.png"></a></li>
-                    <li><a class="social" href="https://github.com/Kwexy"><img class="social" src="./img/github-logo.png"></a></li>
+                    <li><a href="portfolio.html" id="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="social" href="https://www.instagram.com/kwextech"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                    <li><a class="social" href="https://www.youtube.com/channel/UCqNKAwAQuSZq9qMwQVak7xg"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
+                    <li><a class="social" href="https://github.com/Kwexy"><i class="fa-brands fa-github fa-xl"></i></a></li>
             </ul>
             </nav>
         </header>
@@ -33,16 +37,46 @@
                 <a target="_blank" href="./img/homelab-pic2.jpg"><img src="./img/homelab-pic2.jpg" alt="Picture of Homelab" class="showcase"></a>
                 <a target="_blank" href="./img/homelab-pic3.jpg"><img src="./img/homelab-pic3.jpg" alt="Picture of Homelab" class="showcase"></a>
                 <h2>Specifications:</h2>
-                <ul>
-                    <li><b>Rack: </b>Dell 2410 24U</li>
-                    <li><b>Monitor: </b>Acer X203H 20" 1600x900</li>
-                    <li><b>Router: </b>Mikrotik RB3011UIAS-RM 10xGigabit Ethernet</li>
-                    <li><b>Switch: </b>ZyXEL GS1910-24 24-Port GbE Managed Switch 4x SFP Ports</li>
-                    <li>Hyve Zeus V1 1U Server</li>
-                    <li>Raspberry Pi 4 w/ Argon ONE V2 Case</li>
-                    <li>Beelink Mini PC</li>
-                    <li>"Frankenstein" Desktop/Server w/ Cooler Master HAF XB EVO Case</li>
-                </ul>
+                <table>
+                    <tr>
+                        <th>Rack:</th>
+                        <td>Dell 2410 24U</td>
+                    </tr>
+                    <tr>
+                        <th>Monitor:</th>
+                        <td>Acer X203H 20" 1600x900</td>
+                    </tr>
+                    <tr>
+                        <th>Router:</th>
+                        <td>Mikrotik RB3011UIAS-RM 10xGigabit Ethernet</td>
+                    </tr>
+                    <tr>
+                        <th>Switch:</th>
+                        <td>ZyXEL GS1910-24 24-Port GbE Managed Switch 4x SFP Ports</td>
+                    </tr>
+                    <tr>
+                        <th>Extras:</th>
+                        <td>
+                            <ul>
+                                <li>
+                                    Hyve Zeus V1 1U Server
+                                </li>
+                                <li>
+                                    Raspberry Pi 4 w/ Argon ONE V2 Case
+                                </li>
+                                <li>
+                                    Beelink Mini PC
+                                </li>
+                                <li>
+                                    "Frankenstein" Desktop/Server w/ Cooler Master HAF XB EVO Case
+                                </li>
+                                <li>
+                                    And More!
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
             </article>
             <article>
                 <h1>Custom PC Build</h1>
@@ -59,17 +93,45 @@
                 <a target="_blank" href="./img/pc-pic5.jpg"><img src="./img/pc-pic5.jpg" alt="PC picture #1" class="showcase"></a>
                 <a target="_blank" href="./img/pc-pic6.jpg"><img src="./img/pc-pic6.jpg" alt="PC picture #1" class="showcase"></a>
                 <h2>Specifications:</h2>
-                <ul>
-                    <li><b>Case: </b>Corsair Carbide Series SPEC-DELTA RGB</li>
-                    <li><b>CPU: </b>AMD Ryzen™ 5 5600x</li>
-                    <li><b>CPU Cooler: </b>Termalright Phantom Spirit 120 EVO</li>
-                    <li><b>GPU: </b>ZOTAC GAMING GeForce RTX 3070 Twin Edge</li>
-                    <li><b>Motherboard: </b>MSI MAG B550 Tomahawk</li>
-                    <li><b>RAM: </b>Corsair VENGEANCE® DDR4 DRAM 2x8GB / VENGEANCE® RGB Pro DDR4 DRAM 2x8GB @ 3200MHz</li>
-                    <li><b>Storage: </b>Samsung 870 EVO SATA SSD / Western Digital 2TB WD Blue SATA SSD</li>
-                    <li><b>PSU: </b>Corsair CX Series™ CX750F RGB - 750 Watt PSU</li>
-                    <li><b>Case Fans: </b>Corsair LL120 RGB 120mm Dual List RGB PWM Fan</li>
-                </ul>
+
+                <table>
+                    <tr>
+                        <th>Case:</th>
+                        <td>Corsair Carbide Series SPEC-DELTA RGB</td>
+                    </tr>
+                    <tr>
+                        <th>CPU:</th>
+                        <td>AMD Ryzen™ 5 5600x</td>
+                    </tr>
+                    <tr>
+                        <th>CPU Cooler:</th>
+                        <td>Termalright Phantom Spirit 120 EVO</td>
+                    </tr>
+                    <tr>
+                        <th>GPU:</th>
+                        <td>ZOTAC GAMING GeForce RTX 3070 Twin Edge</td>
+                    </tr>
+                    <tr>
+                        <th>Motherboard:</th>
+                        <td>MSI MAG B550 Tomahawk</td>
+                    </tr>
+                    <tr>
+                        <th>RAM:</th>
+                        <td>Corsair VENGEANCE® DDR4 DRAM 2x8GB / VENGEANCE® RGB Pro DDR4 DRAM 2x8GB @ 3200MHz</td>
+                    </tr>
+                    <tr>
+                        <th>Storage:</th>
+                        <td>Samsung 870 EVO SATA SSD / Western Digital 2TB WD Blue SATA SSD</td>
+                    </tr>
+                    <tr>
+                        <th>PSU:</th>
+                        <td>Corsair CX Series™ CX750F RGB - 750 Watt PSU</td>
+                    </tr>
+                    <tr>
+                        <th>Case Fans:</th>
+                        <td>Corsair LL120 RGB 120mm Dual List RGB PWM Fan</td>
+                    </tr>
+                </table>
             </article>
             <article>
                 <h1>Custom Keyboard Build</h1>
@@ -83,12 +145,25 @@
                 <a target="_blank" href="./img/keyboard-pic2.jpg"><img src="./img/keyboard-pic2.jpg" alt="Picture of Keyboard" class="showcase"></a>
                 <a target="_blank" href="./img/keyboard-pic3.jpg"><img src="./img/keyboard-pic3.jpg" alt="Picture of Keyboard" class="showcase"></a>
                 <a target="_blank" href="./img/keyboard-pic4.jpg"><img src="./img/keyboard-pic4.jpg" alt="Picture of Keyboard" class="showcase"></a>
+                <video height="400px" controls class="showcase">
+                    <source src="img/keyboard.mp4" type="video/mp4">
+                    This browser does not support videos.
+                </video>
                 <h2>Specifications:</h2>
-                <ul>
-                    <li><b>Frame: </b>GK GAMAKAY LK67 RGB Hotswappable Mechanical Keyboard</li>
-                    <li><b>Switches: </b>Kailh Box Jade Mechanical 3 Pin Keyboard Switches</li>
-                    <li><b>Caps: </b>Gliging Blue Gradient Keycaps</li>
-                </ul>
+                <table>
+                    <tr>
+                        <th>Frame:</th>
+                        <td>GK GAMAKAY LK67 RGB Hotswappable Mechanical Keyboard</td>
+                    </tr>
+                    <tr>
+                        <th>Switches:</th>
+                        <td>Kailh Box Jade Mechanical 3 Pin Keyboard Switches</td>
+                    </tr>
+                    <tr>
+                        <th>Caps:</th>
+                        <td>Gliging Blue Gradient Keycaps</td>
+                    </tr>
+                </table>
             </article>
             <article>
                 <h1>Personal Website</h1>
@@ -98,6 +173,7 @@
         </section>
         <footer>
             <h2>Kyran Gibson 2024</h2>
+            <a href="./portfolio.html"><i class="fa-solid fa-caret-up fa-lg" style="color: #ffffff;"></i></a>
         </footer>
     </body>
 </html>
