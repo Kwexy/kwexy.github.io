@@ -8,20 +8,22 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/140d036a60.js" crossorigin="anonymous"></script>
+        <script src="./mobile-nav.js" defer></script>
     </head>
     <body>
         <header>
-            <nav>
+            <button class="mobile-topnav-toggle" mobile-expanded="false">
+                <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
+            </button>
+            <nav class="navigation" data-visible="false">
+                <img class="logo" src="./img/website-logo.png">
                 <ul>
-                    <li><img src="./img/website-logo.png"></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="portfolio.html" id="active">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a class="social" href="https://www.instagram.com/kwextech"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
-                    <li><a class="social" href="https://www.youtube.com/channel/UCqNKAwAQuSZq9qMwQVak7xg"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
-                    <li><a class="social" href="https://github.com/Kwexy"><i class="fa-brands fa-github fa-xl"></i></a></li>
-            </ul>
+                </ul>
             </nav>
         </header>
         <section>
@@ -32,10 +34,12 @@
                     Since then, I have added quite a few components, including a 24U rack that I somehow managed to fit in my room.<br>
                     I currently run a NAS on the mini PC, and PiHole on my Raspberry Pi, plus many other various projects on my bigger, more powerful machines.
                 </p>
-                <a target="_blank" href="./img/homelab-pic1.jpg"><img src="./img/homelab-pic1.jpg" alt="Picture of Homelab" class="showcase"></a>
-                <a target="_blank" href="./img/homelab-pic4.jpg"><img src="./img/homelab-pic4.jpg" alt="Picture of Homelab" class="showcase"></a>
-                <a target="_blank" href="./img/homelab-pic2.jpg"><img src="./img/homelab-pic2.jpg" alt="Picture of Homelab" class="showcase"></a>
-                <a target="_blank" href="./img/homelab-pic3.jpg"><img src="./img/homelab-pic3.jpg" alt="Picture of Homelab" class="showcase"></a>
+                <div class="flex-box">
+                    <a target="_blank" href="./img/homelab-pic1.jpg"><img src="./img/homelab-pic1.jpg" alt="Picture of Homelab" class="showcase"></a>
+                    <a target="_blank" href="./img/homelab-pic4.jpg"><img src="./img/homelab-pic4.jpg" alt="Picture of Homelab" class="showcase"></a>
+                    <a target="_blank" href="./img/homelab-pic2.jpg"><img src="./img/homelab-pic2.jpg" alt="Picture of Homelab" class="showcase"></a>
+                    <a target="_blank" href="./img/homelab-pic3.jpg"><img src="./img/homelab-pic3.jpg" alt="Picture of Homelab" class="showcase"></a>
+                </div>
                 <h2>Specifications:</h2>
                 <table>
                     <tr>
@@ -86,14 +90,15 @@
                     Since then, I have upgraded all of my components (some more than once) and now have a great looking and speedy computer that I use for gaming, homework and other projects.<br>
                     Most of the old components that I have upgraded over the years have been thrown into my "Frankenstein" machine that lives in my server rack, which I use for all kinds of cool projects.
                 </p>
+                <div class="flex-box">
                 <a target="_blank" href="./img/pc-pic1.jpg"><img src="./img/pc-pic1.jpg" alt="PC picture #1" class="showcase"></a>
                 <a target="_blank" href="./img/pc-pic2.jpg"><img src="./img/pc-pic2.jpg" alt="PC picture #1" class="showcase"></a>
                 <a target="_blank" href="./img/pc-pic3.jpg"><img src="./img/pc-pic3.jpg" alt="PC picture #1" class="showcase"></a>
                 <a target="_blank" href="./img/pc-pic4.jpg"><img src="./img/pc-pic4.jpg" alt="PC picture #1" class="showcase"></a>
                 <a target="_blank" href="./img/pc-pic5.jpg"><img src="./img/pc-pic5.jpg" alt="PC picture #1" class="showcase"></a>
                 <a target="_blank" href="./img/pc-pic6.jpg"><img src="./img/pc-pic6.jpg" alt="PC picture #1" class="showcase"></a>
+                </div>
                 <h2>Specifications:</h2>
-
                 <table>
                     <tr>
                         <th>Case:</th>
@@ -141,11 +146,13 @@
                     The main reason I built this keyboard was just as a cool project and so that I could say that I did.<br>
                     It also has a cool volume knob.
                 </p>
+                <div class="flex-box">
                 <a target="_blank" href="./img/keyboard-pic1.jpg"><img src="./img/keyboard-pic1.jpg" alt="Picture of Keyboard" class="showcase"></a>
                 <a target="_blank" href="./img/keyboard-pic2.jpg"><img src="./img/keyboard-pic2.jpg" alt="Picture of Keyboard" class="showcase"></a>
                 <a target="_blank" href="./img/keyboard-pic3.jpg"><img src="./img/keyboard-pic3.jpg" alt="Picture of Keyboard" class="showcase"></a>
                 <a target="_blank" href="./img/keyboard-pic4.jpg"><img src="./img/keyboard-pic4.jpg" alt="Picture of Keyboard" class="showcase"></a>
-                <video height="400px" controls class="showcase">
+                </div>
+                <video controls class="showcase">
                     <source src="img/keyboard.mp4" type="video/mp4">
                     This browser does not support videos.
                 </video>

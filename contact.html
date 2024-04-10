@@ -8,26 +8,33 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/140d036a60.js" crossorigin="anonymous"></script>
+        <script src="./mobile-nav.js" defer></script>
     </head>
     <body>
         <header>
-            <nav>
+            <button class="mobile-topnav-toggle" mobile-expanded="false">
+                <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff;"></i>
+            </button>
+            <nav class="navigation" data-visible="false">
+                <img class="logo" src="./img/website-logo.png">
                 <ul>
-                    <li><img src="./img/website-logo.png"></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html" id="active">Contact</a></li>
-                    <li><a class="social" href="https://www.instagram.com/kwextech"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
-                    <li><a class="social" href="https://www.youtube.com/channel/UCqNKAwAQuSZq9qMwQVak7xg"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
-                    <li><a class="social" href="https://github.com/Kwexy"><i class="fa-brands fa-github fa-xl"></i></a></li>
-            </ul>
+                </ul>
             </nav>
         </header>
         <section>
             <article>
                 <h1>Get In Touch</h1>
                 <h2><b>Email: </b>kyrang@gmail.com</h2>
+                <ul>
+                    <li><a class="social" href="https://www.instagram.com/kwextech"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                    <li><a class="social" href="https://www.youtube.com/channel/UCqNKAwAQuSZq9qMwQVak7xg"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
+                    <li><a class="social" href="https://github.com/Kwexy"><i class="fa-brands fa-github fa-xl"></i></a></li>
+                </ul>
                 <p>Based in Gig Harbor, WA</p>
             </article>
         </section>
